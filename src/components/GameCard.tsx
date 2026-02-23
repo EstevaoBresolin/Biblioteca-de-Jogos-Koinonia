@@ -37,7 +37,10 @@ const CATEGORY_ICONS: Record<string, string> = {
   Cooperativo: '🤝',
   Dedução: '🔍'
 };
-export function GameCard({ game, onDetailsClick }: GameCardProps) {
+export function GameCard({
+  game,
+  onDetailsClick
+}: GameCardProps) {
   const [imgError, setImgError] = useState(false);
   const proxiedImage = proxyImage(game.image);
   const gradient = CATEGORY_GRADIENTS[game.category] ?? 'from-gray-900 to-navy';
@@ -54,50 +57,32 @@ export function GameCard({ game, onDetailsClick }: GameCardProps) {
         return 'bg-gray-700 text-gray-300';
     }
   };
-  return (
-    <motion.div
-      layout
-      initial={{
-        opacity: 0,
-        y: 20
-      }}
-      animate={{
-        opacity: 1,
-        y: 0
-      }}
-      exit={{
-        opacity: 0,
-        y: 20
-      }}
-      whileHover={{
-        y: -8,
-        boxShadow: '0 20px 40px rgba(62, 213, 152, 0.15)',
-        transition: {
-          duration: 0.2
-        }
-      }}
-      className="group relative bg-card-bg rounded-xl overflow-hidden border-b-4 border-mint h-full flex flex-col cursor-pointer"
-      onClick={() => onDetailsClick(game)}>
+  return <motion.div layout initial={{
+    opacity: 0,
+    y: 20
+  }} animate={{
+    opacity: 1,
+    y: 0
+  }} exit={{
+    opacity: 0,
+    y: 20
+  }} whileHover={{
+    y: -8,
+    boxShadow: '0 20px 40px rgba(62, 213, 152, 0.15)',
+    transition: {
+      duration: 0.2
+    }
+  }} className="group relative bg-card-bg rounded-xl overflow-hidden border-b-4 border-mint h-full flex flex-col cursor-pointer" onClick={() => onDetailsClick(game)}>
 
       {/* Image Area */}
-      <div
-        className={`h-48 w-full bg-gradient-to-br ${gradient} relative overflow-hidden`}>
+      <div className={`h-48 w-full bg-gradient-to-br ${gradient} relative overflow-hidden`}>
 
-        {proxiedImage && !imgError ?
-        <img
-          src={proxiedImage}
-          alt={game.title}
-          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-          onError={() => setImgError(true)} /> :
-
-
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+        {proxiedImage && !imgError ? <img src={proxiedImage} alt={game.title} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onError={() => setImgError(true)} /> : <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
             <span className="text-5xl drop-shadow-lg">{icon}</span>
             <span className="text-xs text-white/40 font-medium px-6 text-center leading-tight line-clamp-2">
               {game.title}
             </span>
-          </div>
-        }
+          </div>}
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-card-bg via-transparent to-transparent opacity-60" />
 
@@ -127,23 +112,19 @@ export function GameCard({ game, onDetailsClick }: GameCardProps) {
           </div>
 
           <div className="pt-4 border-t border-white/5 flex justify-between items-center">
-            <span
-              className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getDifficultyColor(game.difficulty)}`}>
+            <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getDifficultyColor(game.difficulty)}`}>
 
               {game.difficulty}
             </span>
-            <button
-              className="text-sm font-medium text-mint hover:text-white transition-colors"
-              onClick={(e) => {
-                e.stopPropagation();
-                onDetailsClick(game);
-              }}>
+            <button className="text-sm font-medium text-mint hover:text-white transition-colors" onClick={(e) => {
+            e.stopPropagation();
+            onDetailsClick(game);
+          }}>
 
               Detalhes →
             </button>
           </div>
         </div>
       </div>
-    </motion.div>);
-
+    </motion.div>;
 }

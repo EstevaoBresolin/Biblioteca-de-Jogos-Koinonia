@@ -1,0 +1,99 @@
+
+[
+  {
+    "id": 1,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Adventure",
+    "platform": "Nintendo Switch",
+    "rating": 9.8,
+    "description": "An open-world adventure game where you explore the vast kingdom of Hyrule, solve puzzles, and battle enemies to save Princess Zelda.",
+    "imageUrl": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=400&h=300&fit=crop",
+    "year": 2017,
+    "developer": "Nintendo",
+    "tags": ["Open World", "Action", "Puzzle"]
+  },
+  {
+    "id": 2,
+    "title": "Red Dead Redemption 2",
+    "genre": "Action",
+    "platform": "PlayStation 4",
+    "rating": 9.7,
+    "description": "An epic tale of life in America's unforgiving heartland. The game's vast and atmospheric world also provides the foundation for a brand new online multiplayer experience.",
+    "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop",
+    "year": 2018,
+    "developer": "Rockstar Games",
+    "tags": ["Open World", "Story", "Western"]
+  },
+  {
+    "id": 3,
+    "title": "God of War",
+    "genre": "Action",
+    "platform": "PlayStation 4",
+    "rating": 9.6,
+    "description": "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters.",
+    "imageUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop",
+    "year": 2018,
+    "developer": "Santa Monica Studio",
+    "tags": ["Action", "Story", "Mythology"]
+  },
+  {
+    "id": 4,
+    "title": "The Witcher 3: Wild Hunt",
+    "genre": "RPG",
+    "platform": "PC",
+    "rating": 9.5,
+    "description": "A story-driven, next-generation open world role-playing game set in a visually stunning fantasy universe full of meaningful choices and impactful consequences.",
+    "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=300&fit=crop",
+    "year": 2015,
+    "developer": "CD Projekt Red",
+    "tags": ["RPG", "Open World", "Fantasy"]
+  },
+  {
+    "id": 5,
+    "title": "Minecraft",
+    "genre": "Sandbox",
+    "platform": "PC",
+    "rating": 9.3,
+    "description": "A game about placing blocks and going on adventures. Explore randomly generated worlds and build amazing things from the simplest of homes to the grandest of castles.",
+    "imageUrl": "https://images.unsplash.com/photo-1607513746994-51f730a44832?w=400&h=300&fit=crop",
+    "year": 2011,
+    "developer": "Mojang",
+    "tags": ["Sandbox", "Survival", "Creative"]
+  },
+  {
+    "id": 6,
+    "title": "Cyberpunk 2077",
+    "genre": "RPG",
+    "platform": "PC",
+    "rating": 8.8,
+    "description": "An open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification.",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&h=300&fit=crop",
+    "year": 2020,
+    "developer": "CD Projekt Red",
+    "tags": ["RPG", "Open World", "Sci-Fi"]
+  },
+  {
+    "id": 7,
+    "title": "Halo Infinite",
+    "genre": "Shooter",
+    "platform": "Xbox",
+    "rating": 8.7,
+    "description": "When all hope is lost and humanity's fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he's ever faced.",
+    "imageUrl": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=400&h=300&fit=crop",
+    "year": 2021,
+    "developer": "343 Industries",
+    "tags": ["Shooter", "Sci-Fi", "Multiplayer"]
+  },
+  {
+    "id": 8,
+    "title": "Elden Ring",
+    "genre": "RPG",
+    "platform": "PC",
+    "rating": 9.4,
+    "description": "A new fantasy action RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+    "imageUrl": "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=400&h=300&fit=crop",
+    "year": 2022,
+    "developer": "FromSoftware",
+    "tags": ["RPG", "Open World", "Souls-like"]
+  }
+]
