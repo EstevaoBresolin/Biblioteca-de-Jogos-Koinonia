@@ -1,8 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-navy py-20 sm:py-32">
+    <section className="relative overflow-hidden bg-navy py-20 sm:py-8">
       {/* Background Radial Gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-mint/5 rounded-full blur-3xl" />
@@ -15,33 +15,33 @@ export function Hero() {
           <motion.div
             initial={{
               opacity: 0,
-              x: -20
+              x: -20,
             }}
             animate={{
               opacity: 1,
-              x: 0
+              x: 0,
             }}
             transition={{
-              duration: 0.6
+              duration: 0.6,
             }}
-            className="text-center lg:text-left">
-
+            className="text-center lg:text-left"
+          >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-outfit leading-tight mb-6">
               Descubra Jogos, <br />
               <span className="relative inline-block">
-                Construa Comunidade
+                Construa Comunhão
                 <svg
                   className="absolute w-full h-3 -bottom-1 left-0 text-mint"
                   viewBox="0 0 200 9"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M2.00025 6.99997C25.7509 2.83331 83.2511 -3.00003 198.002 4.99996"
                     stroke="currentColor"
                     strokeWidth="3"
-                    strokeLinecap="round" />
-
+                    strokeLinecap="round"
+                  />
                 </svg>
               </span>
             </h1>
@@ -51,13 +51,13 @@ export function Hero() {
             </p>
             <motion.button
               whileHover={{
-                scale: 1.05
+                scale: 1.05,
               }}
               whileTap={{
-                scale: 0.95
+                scale: 0.95,
               }}
-              className="bg-mint text-navy px-8 py-4 rounded-full text-lg font-bold shadow-lg shadow-mint/20 hover:shadow-mint/40 transition-shadow duration-300">
-
+              className="bg-mint text-navy px-8 py-4 rounded-full text-lg font-bold shadow-lg shadow-mint/20 hover:shadow-mint/40 transition-shadow duration-300"
+            >
               Explorar Jogos
             </motion.button>
           </motion.div>
@@ -69,15 +69,15 @@ export function Hero() {
               viewBox="0 0 400 400"
               className="w-full h-full max-w-md mx-auto"
               initial={{
-                opacity: 0
+                opacity: 0,
               }}
               animate={{
-                opacity: 1
+                opacity: 1,
               }}
               transition={{
-                duration: 1
-              }}>
-
+                duration: 1,
+              }}
+            >
               {/* Floating Hexagon (Catan-style) */}
               <motion.path
                 d="M200 50 L243.3 75 L243.3 125 L200 150 L156.7 125 L156.7 75 Z"
@@ -86,14 +86,14 @@ export function Hero() {
                 strokeWidth="2"
                 animate={{
                   y: [0, -15, 0],
-                  rotate: [0, 5, 0]
+                  rotate: [0, 5, 0],
                 }}
                 transition={{
                   duration: 6,
                   repeat: Infinity,
-                  ease: 'easeInOut'
-                }} />
-
+                  ease: "easeInOut",
+                }}
+              />
 
               {/* Floating Card */}
               <motion.rect
@@ -107,15 +107,15 @@ export function Hero() {
                 strokeWidth="2"
                 animate={{
                   y: [0, 20, 0],
-                  rotate: [15, 10, 15]
+                  rotate: [15, 10, 15],
                 }}
                 transition={{
                   duration: 5,
                   repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: 0.5
-                }} />
-
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
+              />
 
               {/* Floating Meeple/Pawn */}
               <motion.path
@@ -124,15 +124,15 @@ export function Hero() {
                 opacity="0.8"
                 animate={{
                   y: [0, -25, 0],
-                  rotate: [-10, 0, -10]
+                  rotate: [-10, 0, -10],
                 }}
                 transition={{
                   duration: 7,
                   repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: 1
-                }} />
-
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
+              />
 
               {/* Floating Dice */}
               <motion.rect
@@ -146,14 +146,15 @@ export function Hero() {
                 strokeWidth="2"
                 animate={{
                   y: [0, 15, 0],
-                  rotate: [45, 90, 45]
+                  rotate: [45, 90, 45],
                 }}
                 transition={{
                   duration: 8,
                   repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: 0.2
-                }} />
+                  ease: "easeInOut",
+                  delay: 0.2,
+                }}
+              />
 
               <motion.circle
                 cx="295"
@@ -162,14 +163,15 @@ export function Hero() {
                 fill="#3ED598"
                 animate={{
                   y: [0, 15, 0],
-                  rotate: [45, 90, 45]
+                  rotate: [45, 90, 45],
                 }}
                 transition={{
                   duration: 8,
                   repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: 0.2
-                }} />
+                  ease: "easeInOut",
+                  delay: 0.2,
+                }}
+              />
 
               <motion.circle
                 cx="315"
@@ -178,15 +180,15 @@ export function Hero() {
                 fill="#3ED598"
                 animate={{
                   y: [0, 15, 0],
-                  rotate: [45, 90, 45]
+                  rotate: [45, 90, 45],
                 }}
                 transition={{
                   duration: 8,
                   repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: 0.2
-                }} />
-
+                  ease: "easeInOut",
+                  delay: 0.2,
+                }}
+              />
 
               {/* Connecting Lines */}
               <motion.path
@@ -196,12 +198,13 @@ export function Hero() {
                 strokeDasharray="4 4"
                 opacity="0.3"
                 animate={{
-                  opacity: [0.1, 0.4, 0.1]
+                  opacity: [0.1, 0.4, 0.1],
                 }}
                 transition={{
                   duration: 4,
-                  repeat: Infinity
-                }} />
+                  repeat: Infinity,
+                }}
+              />
 
               <motion.path
                 d="M120 250 L280 275"
@@ -210,18 +213,18 @@ export function Hero() {
                 strokeDasharray="4 4"
                 opacity="0.3"
                 animate={{
-                  opacity: [0.1, 0.4, 0.1]
+                  opacity: [0.1, 0.4, 0.1],
                 }}
                 transition={{
                   duration: 5,
                   repeat: Infinity,
-                  delay: 1
-                }} />
-
+                  delay: 1,
+                }}
+              />
             </motion.svg>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
